@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Angular App</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+		<!-- CSS -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet">
+        <style> body { padding: 50px 0; } </style>
+
+		<!-- JS -->
+		<!-- Dependencies -->
+		<script src="node_modules/core-js/client/shim.min.js"></script>
+		<script src="node_modules/zone.js/dist/zone.js"></script>
+		<script src="node_modules/reflect-metadata/Reflect.js"></script>
+
+		<!-- Load angular app with systemjs -->
+		<script src="node_modules/systemjs/dist/system.src.js"></script>
+		<script src="systemjs.config.js"></script>
+		<script>
+			System.import('app').catch(function(err) { console.error(err); });
+		</script>
+    </head>
+    <body class="container">
+		<my-app></my-app>
+    </body>
+</html>
